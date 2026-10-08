@@ -29,6 +29,6 @@ public class StageMove : MonoBehaviour
         //垂直入力の取得
         float verticalInput = _playerInput.ReadValue<Vector2>().y;
         //オブジェクトを回転させる
-        _stage.transform.Rotate(horizontalInput, 0f, verticalInput);
+        _stage.transform.Rotate(horizontalInput*0.1f, 0f, verticalInput*0.1f);
     }
 }
